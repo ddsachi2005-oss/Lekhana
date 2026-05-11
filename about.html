@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Lekhana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-content {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+        .about-text { flex: 1; }
+        .skills-container {
+            flex: 1;
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+        .skill-group { margin-bottom: 1.5rem; }
+        .skill-group h4 { margin-bottom: 0.5rem; color: var(--text-primary); }
+        .skill-bar {
+            height: 8px;
+            background: var(--bg-primary);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        .skill-progress {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 4px;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+        @media (max-width: 768px) {
+            .about-content { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-mesh"></div>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Lekhana<span>.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certification.html">Certification</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>About <span class="highlight">Me</span></h2>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Lekhana, a passionate Software Developer with a keen eye for modern design and robust functionality. I enjoy building dynamic, creative products from start to finish.</p>
+                <p>My journey in software development has equipped me with a diverse skill set, ranging from front-end aesthetics to back-end logic. I am constantly learning and adapting to new technologies to deliver high-quality solutions.</p>
+                
+                <a href="lekhana.resume.pdf" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+            
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+                <div style="margin-top: 1.5rem;">
+                    <div class="skill-group">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h4>JavaScript (ES6+)</h4>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-group">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h4>HTML & CSS</h4>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-group">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h4>Python</h4>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill-group">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h4>SQL</h4>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
